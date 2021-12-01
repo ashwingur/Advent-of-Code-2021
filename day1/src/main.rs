@@ -37,7 +37,7 @@ fn main() {
             }
         }
         for i in 3..vec.len() {
-            if vec[i] + vec[i - 1] + vec[i - 2] > vec[i - 1] + vec[i - 2] + vec[i - 3]{
+            if vec[i] > vec[i - 3]{
                 count += 1
             }
         }
