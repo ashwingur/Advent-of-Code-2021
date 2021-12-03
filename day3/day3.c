@@ -65,8 +65,7 @@ void part_two() {
     int length = strlen(buffers);
     lines++;
 
-    for (; fscanf(f, "%s", buffers + lines * BUFFER_SIZE) == 1; lines++)
-        ;
+    while (fscanf(f, "%s", buffers + lines * BUFFER_SIZE) == 1) lines++;
 
     int *oxygens = malloc(sizeof(int) * lines);
     int *carbons = malloc(sizeof(int) * lines);
