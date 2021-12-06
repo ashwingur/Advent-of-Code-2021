@@ -1,7 +1,5 @@
 def calculate_fish_population(initial_fish, days):
-    count = [0 for x in range(9)]
-    for f in initial_fish:
-        count[f] += 1
+    count = [initial_fish.count(x) for x in range(9)]
     for day in range(days):
         count.append(count.pop(0))
         count[6] += count[8]
