@@ -1,4 +1,3 @@
-import statistics
 from numpy import *
 
 
